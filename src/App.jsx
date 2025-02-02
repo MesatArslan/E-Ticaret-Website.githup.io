@@ -2,11 +2,13 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import PageContainer from './container/PageContainer';
 import Header from './components/Hheader';
-import RouterConfig from './config/RouterConfig';
+import { Routes, Route } from "react-router-dom";
 import Loading from './components/Loading';
 import Drawer from '@mui/material/Drawer';
 import { useDispatch, useSelector } from 'react-redux';
 import { calculateBasket, removeToBasket, setDrawer } from './redux/slices/basketSlice';
+import Home from './pages/Home'
+import ProductDetails from './components/ProductDetails'
 
 function App() {
 
@@ -26,7 +28,13 @@ function App() {
     <div>
       <PageContainer>
         <Header/>
-        <RouterConfig/>
+        <div>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/product-details/:id" element={<ProductDetails />} />
+          </Routes>
+
+        </div>
         <Loading/>
         <Drawer anchor='right' open={drawer} onClose={() => dispatch(setDrawer())}>
           <div>
