@@ -5,13 +5,13 @@ import ProductDetails from '../components/ProductDetails'
 
 function RouterConfig() {
   return (
-    <div>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/product-details/:id" element={<ProductDetails />} />
       </Routes>
-    </div>
-  );
+    </HashRouter>
+  )
 }
 
-export default RouterConfig;
+export default RouterConfig
