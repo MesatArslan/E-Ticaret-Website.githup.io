@@ -1,0 +1,96 @@
+/* Header container */
+.header-main-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #f1f1f1;
+}
+
+.dark-theme {
+    background: linear-gradient(135deg, #320808, #000000, #471010, #000000);
+    color: white;
+}
+
+/* Logo styling */
+.logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.logo-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    padding-left: 10px;
+    color: #333;
+    letter-spacing: 0.5px;
+}
+
+/* Search input styling */
+.search-input {
+    width: 250px;
+    padding: 8px 15px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    outline: none;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.search-input:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 8px rgba(74, 144, 226, 0.4);
+}
+
+/* Icon styling */
+.icon1 {
+    font-size: 24px;
+    margin-left: 15px;
+    transition: transform 0.3s ease;
+    color: #000 !important;
+    margin-top: 14px;
+}
+
+.icon2 {
+    font-size: 24px;
+    margin-left: 15px;
+    transition: transform 0.3s ease;
+    color: #000 !important;
+    margin-bottom: 16px;
+}
+
+/* Hover effects for icons */
+.icon1:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    color: #4a90e2;
+}
+
+/* Badge styling */
+.MuiBadge-dot {
+    background-color: #ff6b6b;
+}
+
+/* Dark mode icons styling */
+.icon1 {
+    transition: color 0.3s ease;
+}
+
+/* Theme toggler */
+.icon1:hover {
+    color: #4a90e2;
+}
+
+.icon2 {
+    transition: color 0.3s ease;
+}
+
+/* Theme toggler */
+.icon2:hover {
+    color: #4a90e2;
+}
